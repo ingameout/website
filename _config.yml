@@ -18,8 +18,8 @@ email: hello@ingameout.com
 meeting: https://calendly.com/ingameout/say-hello
 description: >- # this means to ignore newlines until "baseurl:"
   in/game/out is a video game project assessment service for investors, offering an impartial review of proposed projects by a team of highly skilled video game developers.
-baseurl: "/vgcc-site" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.ingameout.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ingameout
 github_username:  jekyll
 logo_light: "/assets/logo_light_grey.png"

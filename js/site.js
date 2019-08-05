@@ -1,5 +1,5 @@
 
-import {CountUp} from '/vgcc-site/js/lib/countUp.min.js';
+import {CountUp} from '/js/lib/countUp.min.js';
 
 class Site {
     constructor() {
