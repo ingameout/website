@@ -22,8 +22,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.ingameout.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ingameout
 github_username:  jekyll
-logo_light: "/assets/logo_light_grey.png"
-logo: "/assets/logo_grey.png"
+logo_light: "https://ingameout.com/assets/logo_light_grey.png"
+logo: "https://ingameout.com/assets/logo_grey.png"
 
 # applies pretty for all
 permalink: pretty
