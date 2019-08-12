@@ -9,11 +9,20 @@
 
 body {
     background-color: var(--background-color) !important;
+    color: var(--text-color);
     overflow-y: scroll;
     scroll-behavior: auto;
     font-family: 'SF New Republic',Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 p {
