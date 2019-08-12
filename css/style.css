@@ -1,5 +1,6 @@
 :root {
     --background-color:   #2a2f36;
+    --morph-color:        #30353c;
     --text-color:         #ffffff;
     --logo-text-color:    #bdbdbd;
     --pop-text-color:     #4CAF50;
@@ -154,7 +155,7 @@ h0 {
 
 /* TEXT */
 a {
-    color: white !important;
+    color: var(--site-text) !important;
     border-bottom: 1px solid var(--link-color);
     padding: 0px 4px 3px 4px;
 }
@@ -253,5 +254,5 @@ a.brand-logo {
 	flex: none;
     fill: none;
     stroke-width: 12px;
-    stroke: #393b3d;
+    stroke: var(--morph-color);
 }
