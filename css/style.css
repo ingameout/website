@@ -1,21 +1,17 @@
+:root {
+    --background-color:   #2a2f36;
+    --text-color:         #ffffff;
+    --logo-text-color:    #bdbdbd;
+    --pop-text-color:     #4CAF50;
+    --link-color:         #FFC107;
+    --tag-text-color:     #FFC107;
+}
+
 body {
-    background-color: #2a2f36;
+    background-color: var(--background-color) !important;
     overflow-y: scroll;
     scroll-behavior: auto;
     font-family: 'SF New Republic',Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-
-    /* --text-color: #fff; */
-    --background-color: #363dc2;
-    --background-color-2: #282faf;
-    --background-color-3: #202692;
-    /* --link-color: #03b9f1; */
-    /* --link-hover-color: #fff; */
-    /* font-family: 'Roboto Mono', monospace; */
-    /* font-weight: 500; */
-    /* color: #fff; */
-    /* color: var(--text-color); */
-    /* background-color: #363dc2; */
-    /* background-color: var(--background-color); */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -43,11 +39,6 @@ p {
     src: local('SF New Republic'), url('../assets/SF New Republic.woff') format('woff');
 }
 
-.logo-font {
-    font-family: 'SF New Republic';
-    /* font-family: 'Fredoka One', cursive; */
-}
-
 .no-padding {
     padding: 0 !important;
 }
@@ -55,9 +46,16 @@ p {
 .no-margin {
     margin: 0 !important;
 }
-/* SITE COLORS */
-.site-grey { background-color: #2a2f36 !important; }
 
+/* SITE COLORS */
+.bg-color-1 { background-color: var(--background-color) !important; }
+.site-text { color: var(--text-color) !important; }
+.logo-text {
+    font-family: 'SF New Republic';
+    color: var(--logo-text-color) !important;
+}
+.pop-text { color: var(--pop-text-color) !important; }
+.tag-text { color: var(--tag-text-color) !important; }
 
  /* PANEL SIZES */
 
@@ -148,12 +146,12 @@ h0 {
 /* TEXT */
 a {
     color: white !important;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid var(--link-color);
     padding: 0px 4px 3px 4px;
 }
 
 a:hover {
-    border-bottom: 8px solid yellow;
+    border-bottom: 8px solid var(--link-color);
 }
 
 p {
@@ -208,11 +206,11 @@ p.small-text {
 }
 
 nav ul li.active {
-    border-bottom: 3px solid yellow !important;
+    border-bottom: 3px solid var(--link-color) !important;
 }
 
 a.active {
-    border-bottom: 3px solid yellow !important;
+    border-bottom: 3px solid var(--link-color) !important;
 }
 
 .z-depth-0 {
@@ -243,7 +241,6 @@ a.brand-logo {
 .morph {
 	position: relative;
 	height: 100%;
-	fill: var(--background-color);
 	flex: none;
     fill: none;
     stroke-width: 12px;

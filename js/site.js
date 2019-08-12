@@ -292,7 +292,6 @@ class Site {
           })
           .onStepEnter( res => {
             const pos = ( res.index < shapes.length ) ? res.index : 0;
-            console.log( res.index, shapes.length );
             anime.remove(DOM.shapeEl);
             anime({
                 targets: DOM.shapeEl,
